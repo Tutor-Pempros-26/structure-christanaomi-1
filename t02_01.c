@@ -4,28 +4,28 @@
 #include <stdio.h>
 
 int main() {
-    int jumlah_buku;
-    double harga_buku, total, potongan = 0;
+    int jumlah;
+    double harga, total, diskon = 0;
 
-    scanf("%d", &jumlah_buku);
-    scanf("%lf", &harga_buku);
+    scanf("%d", &jumlah);
+    scanf("%lf", &harga);
 
-    total = jumlah_buku * harga_buku;
+    total = jumlah * harga;
 
     if (total > 500000) {
-        potongan = 0.15 * total;
+        diskon = 0.15 * total;
     } else if (total >= 100000) {
-        potongan = 0.10 * total;
+        diskon = 0.10 * total;
     } else if (total > 50000) {
-        potongan = 0.05 * total;
+        diskon = 0.05 * total;
     }
 
-    if (potongan == 0) {
+    if (diskon == 0) {
         printf("---\n");
         printf("%.2lf\n", total);
     } else {
-        printf("%.2lf\n", potongan);
-        printf("%.2lf\n", total - potongan);
+        printf("%.2lf\n", diskon);
+        printf("%.2lf\n", total - diskon);
     }
 
     return 0;

@@ -3,40 +3,30 @@
 #include <stdio.h>
 
 int main() {
-    char operator;
-    int angka, hitung = 0;
-    int hasil;
+    char op;
+    int num, count = 0;
+    int result;
 
-    scanf(" %c", &operator);
+    scanf(" %c", &op);
 
-    if (operator == '+') hasil = 0;
-    else if (operator == '-') hasil = 0;
-    else if (operator == '*') hasil = 1;
-    else {
-        printf("Operator tidak valid\n");
-        return 0;
-    }
+    if (op == '+') result = 0;
+    else if (op == '-') result = 0;
+    else if (op == '*') result = 1;
+    else return 0;
 
     while (1) {
-        scanf("%d", &angka);
-        hitung++;
-
-        if (angka == -1 || hitung > 5) {
-            printf("%c\n", operator);
-            printf("%d\n", hasil);
+        if (scanf("%d", &num) != 1) break;
+        if (num == -1) {
+            printf("0\n");
             break;
         }
-
-        printf("%c\n", operator);
-        printf("%d\n", angka);
-
-        if (operator == '+') hasil = hasil + angka;
-        else if (operator == '-') hasil = hasil - angka;
-        else if (operator == '*') hasil = hasil * angka;
-
-        printf("%d\n", hasil);
+        count++;
+        if (op == '+') result = result + num;
+        else if (op == '-') result = result - num;
+        else if (op == '*') result = result * num;
+        printf("%d\n", result);
+        if (count >= 5) break;
     }
 
     return 0;
 }
-

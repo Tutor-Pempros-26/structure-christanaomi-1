@@ -9,37 +9,35 @@ int main() {
 
     switch(level) {
         case 1:
-            printf("makanan pokok\n");
-            printf("kamu perlu lauk pauk\n");
+            printf("staple food\n");
+            printf("you need side dishes\n");
             break;
         case 2:
-            printf("lauk pauk\n");
-            printf("makanan pokok\n");
-            printf("kamu perlu sayuran\n");
+            printf("side dishes\n");
+            printf("staple food\n");
+            printf("you need vegetables\n");
             break;
         case 3:
-            printf("sayuran\n");
-            printf("lauk pauk\n");
-            printf("makanan pokok\n");
-            printf("baik\n");
+            printf("vegetables\n");
+            printf("side dishes\n");
+            printf("staple food\n");
+            printf("good\n");
             break;
         case 4:
-            printf("buah\n");
-            printf("sayuran\n");
-            printf("lauk pauk\n");
-            printf("makanan pokok\n");
-            printf("sangat baik\n");
+            printf("fruits\n");
+            printf("vegetables\n");
+            printf("side dishes\n");
+            printf("staple food\n");
+            printf("very good\n");
             break;
         case 5:
-            printf("susu\n");
-            printf("buah\n");
-            printf("sayuran\n");
-            printf("lauk pauk\n");
-            printf("makanan pokok\n");
-            printf("sempurna\n");
+            printf("milk\n");
+            printf("fruits\n");
+            printf("vegetables\n");
+            printf("side dishes\n");
+            printf("staple food\n");
+            printf("perfect\n");
             break;
-        default:
-            printf("Input tidak valid\n");
     }
 
     return 0;
