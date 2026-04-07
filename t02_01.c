@@ -15,7 +15,7 @@ int main() {
     if (total > 500000) {
         diskon = 0.15 * total;
     } else if (total >= 100000) {
-        diskon = 0.10 * total;
+        diskon = 0.05 * total;
     } else if (total > 50000) {
         diskon = 0.05 * total;
     }
@@ -30,4 +30,5 @@ int main() {
 
     return 0;
 }
+
 
